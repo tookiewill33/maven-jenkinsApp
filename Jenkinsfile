@@ -6,7 +6,7 @@ pipeline {
   stages{
     stage('1-cloning project repo'){
       steps{
-        checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'cicd', url: 'https://github.com/tookiewill33/maven-buildApp.git']])
+        checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'cicd', url: 'https://github.com/tookiewill33/maven-jenkinsApp.git']])
       }
     }
     stage('2-cleanws'){
